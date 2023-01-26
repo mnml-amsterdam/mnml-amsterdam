@@ -24,7 +24,7 @@ body {
 }
 
 #main {
-    padding: 40px;
+    padding:0 40px;
 }
 
 .banner {
@@ -41,7 +41,7 @@ body {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    padding: 40px 100px;
+    padding: 100px;
 }
 
 .social-icons {
