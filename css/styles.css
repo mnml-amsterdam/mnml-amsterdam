@@ -38,7 +38,7 @@ h1 {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 400px);
+    height: calc(100vh - 360px);
     z-index:-1;
 }
 
