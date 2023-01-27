@@ -5,9 +5,9 @@ html {
     background: #060606;
   }
 
-body {
+/* body {
     overflow: hidden;
-}
+} */
 
 .header {
     display: flex;
