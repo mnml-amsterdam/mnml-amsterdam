@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     font-family: 'Lekton', sans-serif;
+    color: white;
   }
 
 body {
@@ -23,17 +24,24 @@ body {
     fill: white;
 }
 
+h1 {
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0;
+}
+
 #main {
     padding:0 40px;
 }
 
 .banner {
+    position: relative;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 100px);
-    overflow: hidden;
+    height: calc(100vh - 375px);
+    z-index:-1;
 }
 
 .footer {
@@ -41,7 +49,7 @@ body {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 40px;
 }
 
 .social-icons {
@@ -49,7 +57,7 @@ body {
     flex-flow:row nowrap;
     align-items: center;
     justify-content: space-between;
-    width: 16%;
+    width: 150px;
 }
 
 .icon svg {
@@ -65,11 +73,28 @@ body {
     justify-content: center;
     border-top: 1px solid darkgray;
     padding:10px 40px;
-    font-size: 10px;
+    font-size: 6px;
 }
 
-.copyright a {
+/* Links */
+a {
     color: white;
-    font-weight:900;
     text-decoration: none;
+}
+
+a:hover {
+    font-weight:900;
+}
+
+a:active {
+    color: lightgrey;
+}
+
+a:visited {
+    color: darkgray;
+}
+
+/* Desktop */
+@media only screen and (min-width: 480px) {
+    .copyright {font-size:10px}
 }
