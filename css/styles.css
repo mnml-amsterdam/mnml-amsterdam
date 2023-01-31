@@ -57,7 +57,7 @@ h1 {
     flex-flow:row nowrap;
     align-items: center;
     justify-content: space-between;
-    §width: 150px;
+    width: 150px;
     padding: 40px;
 }
 
