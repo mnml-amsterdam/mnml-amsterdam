@@ -15,6 +15,9 @@ html {
     align-items: center;
     padding: 20px 0;
     width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 .logo {
@@ -38,7 +41,7 @@ h1 {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 360px);
+    height: 100vh;
     z-index:-1;
     overflow: hidden;
 }
@@ -49,6 +52,10 @@ h1 {
     align-items: center;
     justify-content: center;
     padding: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
 }
 
 .social-icons {
