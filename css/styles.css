@@ -56,19 +56,12 @@ h1 {
 }
 
 .social-icons {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-}
-
-.social-icons {
     display:flex;
     flex-flow:row nowrap;
     align-items: center;
     justify-content: space-between;
     width: 150px;
+    padding: 40px;
 }
 
 .icon svg {
