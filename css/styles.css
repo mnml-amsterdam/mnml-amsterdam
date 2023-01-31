@@ -3,11 +3,8 @@ html {
     font-family: 'Lekton', sans-serif;
     color: white;
     background: #060606;
-  }
+}
 
-/* body {
-    overflow: hidden;
-} */
 
 .header {
     display: flex;
@@ -60,7 +57,7 @@ h1 {
     flex-flow:row nowrap;
     align-items: center;
     justify-content: space-between;
-    width: 150px;
+    §width: 150px;
     padding: 40px;
 }
 
@@ -78,7 +75,6 @@ h1 {
     border-top: 1px solid darkgray;
     padding:10px 40px;
     font-size: 6px;
-    width: 100%;
 }
 
 /* Links */
