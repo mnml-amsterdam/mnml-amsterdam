@@ -52,7 +52,7 @@ h1 {
     bottom: 0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    align-items: center;
 }
 
 .social-icons {
@@ -78,6 +78,7 @@ h1 {
     border-top: 1px solid darkgray;
     padding:10px 40px;
     font-size: 6px;
+    width: 100%;
 }
 
 /* Links */
