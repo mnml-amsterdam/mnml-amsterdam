@@ -42,9 +42,6 @@ h1 {
     overflow: hidden; */
     padding-bottom: 150px;
 }
-.bi-image {
-    padding: 40px 0;
-}
 
 .bi-desktop {
     display: none;
@@ -116,6 +113,10 @@ a:visited {
 
 /* Desktop */
 @media only screen and (min-width: 480px) {
+    .bi-image {
+        padding: 40px 0;
+    }
+    
     .btn-cta {
         transition: all .2s ease-in-out;
         background: black;
