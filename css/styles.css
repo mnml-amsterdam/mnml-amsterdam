@@ -17,8 +17,6 @@ body {
     padding: 20px 0;
     width: 100%;
     width: 100%;
-    /* position: absolute; */
-    /* top: 0; */
 }
 
 .logo {
@@ -71,8 +69,6 @@ display: flex;
 .slider {
     display: flex;
     flex-flow: row nowrap;
-    /* padding: 40px; */
-    /* padding-bottom: 150px; */
     overflow-x: auto;
     width: 100%;
     -webkit-overflow-scrolling: touch;
@@ -92,12 +88,7 @@ display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px;
-    padding-bottom: 150px;
 }
-
-/* .images {
-    border: 10px solid lightgrey;
-} */
 
 .bi-desktop {
     display: none;
@@ -109,10 +100,15 @@ display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid white;
+    border-radius: 4px;
     padding: 10px 20px;
     background: white;
     color: black;
     font-weight: 900;
+}
+
+.music .iframe-container {
+    padding: 40px;
 }
 
 .footer {
