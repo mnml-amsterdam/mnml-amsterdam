@@ -3,6 +3,7 @@ html {
     font-family: 'Lekton', sans-serif;
     color: white;
     background: #060606;
+    overflow-x: hidden;
 }
 
 body {
