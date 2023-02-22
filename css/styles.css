@@ -5,6 +5,10 @@ html {
     background: #060606;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .header {
     display: flex;
     flex-flow: column;
@@ -31,17 +35,65 @@ h1 {
     margin: 0;
 }
 
-.banner {
-    /* position: relative; */
+.slider-container {
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+}
+
+.slider-container:hover .swipe{
+display: none;
+}
+
+.swipe {
+    display: none;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    animation: fadeInOut 2.5s ease-out infinite;
+}
+
+.swipe svg {
+    fill: white;
+    width: 20px;
+    height: 10px;
+}
+
+.slider {
+    display: flex;
+    flex-flow: row nowrap;
+    /* padding: 40px; */
+    /* padding-bottom: 150px; */
+    overflow-x: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.banner {
+    display: flex;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    /* height: 100vh;
-    z-index:-1;
-    overflow: hidden; */
+    padding: 40px;
     padding-bottom: 150px;
 }
+
+/* .images {
+    border: 10px solid lightgrey;
+} */
 
 .bi-desktop {
     display: none;
@@ -113,10 +165,14 @@ a:visited {
 
 /* Desktop */
 @media only screen and (min-width: 480px) {
+    .swipe {
+        display: flex;
+    }
+    
     .bi-image {
         padding: 40px 0;
     }
-    
+
     .btn-cta {
         transition: all .2s ease-in-out;
         background: black;
@@ -149,4 +205,23 @@ a:visited {
         transform: scale(1.3);
     }
 
+}
+
+
+/* ANIMATIONS */
+@keyframes fadeInOut {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    50% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
 }
