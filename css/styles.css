@@ -54,15 +54,17 @@ display: none;
     justify-content: space-around;
     color: white;
     width: 100px;
-    height: 100%;
     position: absolute;
+    top: 80px;
     animation: fadeInOut 2.5s ease-out infinite;
+    font-size: 10px;
 }
 
 .swipe svg {
     fill: white;
     width: 20px;
     height: 10px;
+    animation: swipeLandR 1.5s ease-out infinite;
 }
 
 .slider {
@@ -224,5 +226,27 @@ a:visited {
     100% {
         display: block;
         opacity: 0;
+    }
+}
+
+@keyframes swipeLandR {
+    0% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateX(5px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0px);
     }
 }
