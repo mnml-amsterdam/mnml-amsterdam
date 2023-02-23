@@ -27,6 +27,7 @@ body {
 
 .logo svg {
     fill: white;
+    animation: swipeLandR 1.5s ease-out infinite;
 }
 
 h1 {
