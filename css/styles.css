@@ -108,7 +108,7 @@ display: flex;
 }
 
 .music .iframe-container {
-    padding: 40px;
+    padding: 80px 20px;
 }
 
 .footer {
@@ -192,6 +192,10 @@ a:visited {
 
     .bi-mobile {
         display: none;
+    }
+
+    .music .iframe-container {
+        padding: 80px;
     }
 
     .copyright {font-size:10px}
